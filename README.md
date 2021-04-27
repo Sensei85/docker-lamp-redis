@@ -1,12 +1,10 @@
-# This branch is marked as legacy and will be kept for backward compatibility. Please take a look at the master branch, where you can find all php versions and the latest stack version
-
 # LAMP stack built with Docker Compose
 
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
-* PHP 8.0.3
+* PHP 7.4.16
 * Apache 2.4
-* MySQL 5.7 and MySQL 8
+* MySQL 5.7.22
 * phpMyAdmin
 * Redis
 
@@ -15,13 +13,15 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 Clone this repository on your local computer and switch to branch `7.4.x`. Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/sensei85/docker-compose-lamp.git
-cd docker-compose-lamp/
+git clone https://github.com/Sensei85/docker-lamp-redis.git
+cd docker-lamp-redis/
 cp sample.env .env
 docker-compose up -d
 ```
 
 Your LAMP stack is now ready!! You can access it via `http://localhost`.
+If you already have another sever running on default port 80, change to 81
+So your new LAMP stack address will be `http://localhost:81`
 
 ## Configuration
 
@@ -83,11 +83,11 @@ There are following configuration variables available and you can customize them
 
 _**DATABASE**_
 
-Switch the database vendor from mysql to mariadb. You can also easily add additonal database versions. 
+Switch the database vendor from mysql to mariadb. You can also easily add additional database versions. 
 
 ## PHP
 
-The installed version of PHP is 8.0.3
+The installed version of PHP is 7.4.16
 
 #### Extensions
 
