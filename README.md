@@ -20,7 +20,8 @@ docker-compose up -d
 ```
 
 Your LAMP stack is now ready!! You can access it via `http://localhost`.
-If you already have another sever running on default port 80, change to 81
+If you already have another sever running on default port 80, change `HOST_MACHINE_UNSECURE_HOST_PORT` in `env` to 81
+
 So your new LAMP stack address will be `http://localhost:81`
 
 ## Configuration
